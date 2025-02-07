@@ -69,7 +69,6 @@ export const newBorrowValidation = (req, res, next) => {
   return joiValidator({ req, res, next, schema });
 };
 
-// ============= Review validation
 
 export const newReviewValidation = (req, res, next) => {
   const schema = Joi.object({
