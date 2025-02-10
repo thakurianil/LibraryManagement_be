@@ -21,16 +21,6 @@ const joiValidator = ({ req, res, next, schema }) => {
   }
 };
 
-export const newUserValidation = (req, res, next) => {
-  const schema = Joi.object({
-    fName: STR_REQUIRED,
-    lName: STR_REQUIRED,
-    phone: PHONE,
-    email: EMAIL,
-    password: STR_REQUIRED,
-  });
-  return joiValidator({ req, res, next, schema });
-};
 
 export const newBookValidation = (req, res, next) => {
   const schema = Joi.object({
