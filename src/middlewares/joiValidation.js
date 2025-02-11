@@ -36,7 +36,7 @@ export const newBookValidation = (req, res, next) => {
   const schema = Joi.object({
     title: STR_REQUIRED,
     author: STR_REQUIRED,
-    thumbnail: STR_REQUIRED,
+    // thumbnail: STR_REQUIRED,
     isbn: STR_REQUIRED,
     publishedYear: Joi.number(),
     description: STR_REQUIRED,
