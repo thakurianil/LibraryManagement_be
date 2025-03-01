@@ -32,17 +32,6 @@ export const newUserValidation = (req, res, next) => {
   return joiValidator({ req, res, next, schema });
 };
 
-export const newBookValidation = (req, res, next) => {
-  const schema = Joi.object({
-    title: STR_REQUIRED,
-    author: STR_REQUIRED,
-    // thumbnail: STR_REQUIRED,
-    isbn: STR_REQUIRED,
-    publishedYear: Joi.number(),
-    description: STR_REQUIRED,
-  });
-  return joiValidator({ req, res, next, schema });
-};
 
 export const updateBookValidation = (req, res, next) => {
   const schema = Joi.object({
